@@ -71,8 +71,9 @@ Developing of scalable, easy to maintain applications whitepaper.
 
   - Ability to run in Cloud platforms
   - Scale by additional processes
-  - Minal divergence between development and production
+  - Minimal divergence between development and production
   - Continous integration and deployment
+
 
   Following list is inspired by [The twelve factor app](https://12factor.net),
   which describes the idea of modern scalable application.
@@ -113,6 +114,7 @@ Developing of scalable, easy to maintain applications whitepaper.
 
     Front-end code should be tested in own environment: in browser.
 
+
   > In JavaScript environment the Mocha tester for serverside testing and
   > Karma based testers for browserside code seems to be good enough solution.
 
@@ -132,6 +134,7 @@ Developing of scalable, easy to maintain applications whitepaper.
   3. **Feature based file structure**
 
     It's most common solution which can reduce dependencies among features.
+
 
   > The more the strict linter is, the better the code will be.
   > [ESLint](http://eslint.org) with
@@ -155,6 +158,7 @@ Developing of scalable, easy to maintain applications whitepaper.
 
     The more the module is known, the more proven solution it is.
 
+
   > Keep mind, that developing own solution requires also documentation,
   > teststing and maintanance. Is it still better, then just linking
   > 3rd party library?
@@ -168,6 +172,7 @@ Developing of scalable, easy to maintain applications whitepaper.
   2. **Each feature should have dependencies defined on just one place.**
 
     Explicitly defined relations between features will simplify subsequent development.
+
 
   > The most simple solution is injecting dependencies only in root `index.js` file
   > of each feature.
